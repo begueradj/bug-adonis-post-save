@@ -1,0 +1,20 @@
+'use strict'
+
+const Person = use('App/Models/Person')
+
+class PersonController {
+  await store({ request, response }) {
+    const data = request.post()
+    console.log(data)
+    const person = new Person()
+    person.username = 'Python'
+    console.log(person.username)
+    await person.save()    
+  }
+  
+  destroy({ request, response, params }) {
+    console.log('hello')
+  }
+}
+
+module.exports = PersonController
