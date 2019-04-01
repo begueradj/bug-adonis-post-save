@@ -12,7 +12,7 @@
       <v-btn
         @click="saveUsers"
       >
-        Save 5 users
+        Post 1 person
       </v-btn>
       
     </v-flex>
